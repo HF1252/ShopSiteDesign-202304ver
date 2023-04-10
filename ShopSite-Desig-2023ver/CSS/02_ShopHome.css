@@ -1,0 +1,53 @@
+section {
+    padding: 2rem 7%;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url('../Img/GlassShoes.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 1rem 0;
+    color: var(--thin-black);
+}
+
+/* media queries */
+@media (max-width: 991px) {
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+}
